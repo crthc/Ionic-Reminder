@@ -1,0 +1,19 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar color='dark'>
+    <ion-title>
+      To Do
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" [fullscreen]="true">
+
+  <app-lists [completed] = "false"></app-lists>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="tertiary" (click)="addList()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+</ion-content>
